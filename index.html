@@ -100,6 +100,12 @@
   .m-pct.yellow { color: #ca8a04; }
   .m-pct.red    { color: #dc2626; }
 
+  .header-top { display: flex; align-items: center; justify-content: center;
+               gap: 14px; margin-bottom: 8px; }
+  .club-logo { width: 52px; height: 52px; object-fit: contain;
+               border-radius: 50%; background: white; padding: 3px; }
+  .alpha-note { font-size: 0.70rem; color: #94a3b8; margin-bottom: 14px;
+                margin-top: -4px; font-style: italic; }
   .footer { text-align: center; padding: 20px 16px 28px;
             font-size: 0.68rem; color: #94a3b8; line-height: 1.8; }
 </style>
@@ -108,8 +114,13 @@
 
 <!-- HEADER -->
 <div class="header">
-  <h1>🏀 ELBC M18-1</h1>
-  <p>Seizoen 2026/27</p>
+  <div class="header-top">
+    <img src="logo.png" alt="ELBC Logo" class="club-logo" onerror="this.style.display='none'">
+    <div>
+      <h1>ELBC M18-1</h1>
+      <p>Seizoen 2026/27</p>
+    </div>
+  </div>
   <span class="update-pill">Bijgewerkt: 14 september 2026</span>
 </div>
 
@@ -181,6 +192,7 @@
 <!-- ATTENDANCE -->
 <div class="section">
   <div class="section-title">Trainingsaanwezigheid — Seizoen 2026/27</div>
+  <p class="alpha-note">Spelers staan op alfabetische volgorde van voornaam.</p>
 
   <!-- NOTE: attendance data will populate from Sep 15 onwards.
        Cards below are placeholders showing clean-slate state. -->
